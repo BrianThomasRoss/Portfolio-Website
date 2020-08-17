@@ -1,7 +1,7 @@
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.DS_Store
+desktop.ini
 poetry.lock
-.idea
-.vscode
-.pyc
-__pycache__
-.env
-
