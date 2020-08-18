@@ -29,8 +29,7 @@ def _factory(view_module_path: str, blueprint_url_path: str):
     )
     return blueprint
 
-auth_user = _factory("auth.user", "/auth")
+
 homepage_index = _factory("index.homepage", "/")
 
-
-application_blueprints = (homepage_index, auth_user)
+application_blueprints = [homepage_index]

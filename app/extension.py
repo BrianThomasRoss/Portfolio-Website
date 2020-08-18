@@ -15,10 +15,6 @@ from flask_wtf.csrf import CSRFProtect
 
 bcrypt = Bcrypt()
 csrf_protect = CSRFProtect()
-login_manager = LoginManager()
-db = SQLAlchemy()
-migrate = Migrate()
 cache = Cache()
 debug_toolbar = DebugToolbarExtension()
 flask_static_digest = FlaskStaticDigest()
-csrf_protect._exempt_views.add("dash.dash.dispatch")
