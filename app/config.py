@@ -24,5 +24,7 @@ CONF_DIR = ROOT_PATH + "/etc"
 # Mail service
 MAIL_SERVER = "send.one.com"
 MAIL_PORT = 465
+MAIL_SUPRESS_SEND=False
 MAIL_USERNAME = env.str("MAIL_USERNAME")
 MAIL_PASSWORD = env.str("MAIL_PASSWORD")
+TESTING=False
