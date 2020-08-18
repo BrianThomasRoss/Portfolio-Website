@@ -1,5 +1,5 @@
 {
-  "name": "My portfolio website",
+  "name": "My-portfolio-website",
   "version": "0.1.0",
   "description": "Collection of personal projects",
   "scripts": {
@@ -34,6 +34,7 @@
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
+    "nerdfonts-web": "^1.0.1",
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
