@@ -14,6 +14,7 @@ from app.extension import (
     csrf_protect,
     debug_toolbar,
     flask_static_digest,
+    mail
 )
 
 __all__ = ["create_app"]
@@ -43,6 +44,7 @@ def register_extensions(app):
     csrf_protect.init_app(app)
     debug_toolbar.init_app(app)
     flask_static_digest.init_app(app)
+    mail.init_app(app)
     return None
 
 

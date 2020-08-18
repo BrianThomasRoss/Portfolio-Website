@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block page_title %}Page Not Found{% endblock %}
+
+{% block content %}
+    <div class="container col-4">
+        <div class="card">
+            <div class="text-center" style="color:#42597D">
+                <h1>404</h1>
+                <p>Sorry, that page doesn't exist.</p>
+                <p>Want to <a href="{{ url_for('index.homepage.home') }}">go home</a> instead?</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

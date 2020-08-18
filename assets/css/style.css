@@ -42,10 +42,6 @@ textarea {
 
 /* Forms */
 
-.form textarea#message{
-  height: 100px
-}
-
 .navbar-brand{
   font-family: "CaskaydiaCove Nerd Font";
   font-weight: bold;
@@ -79,15 +75,9 @@ footer ul li {
   margin-left: 10px;
 }
 
-footer .company {
+footer .company{
   float: left;
   margin-left: 25px;
-}
-
-footer .footer-nav {
-  float: right;
-  margin-right: 25px;
-  list-style: none;
 }
 
 .jumbotron {

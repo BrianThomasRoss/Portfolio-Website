@@ -23,3 +23,9 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 # File paths
 ROOT_PATH = str(Path(__file__).absolute().parent.parent)
 CONF_DIR = ROOT_PATH + "/etc"
+# Mail service
+MAIL_SERVER = "send.one.com"
+MAIL_PORT = 465
+MAIL_USE_SSL = True
+MAIL_USERNAME = env.str("MAIL_USERNAME")
+MAIL_PASSWORD = env.str("MAIL_PASSWORD")

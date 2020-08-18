@@ -24,6 +24,7 @@ flask-bcrypt = "^0.7.1"
 flask-caching = "^1.9.0"
 flask-debugtoolbar = "^0.11.0"
 environs = "^8.0.0"
+flask-mail = "^0.9.1"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

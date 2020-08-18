@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block page_title %}Thank You!{% endblock %}
+
+{% block content %}
+    <div class="container col-4">
+        <div class="card">
+            <div class="text-center" style="color:#42597D">
+                <h1 style="font-family: 'JetBrainsMonoExtraBold Nerd Font'">Wow!</h1>
+                <p>Thanks so much for your interest. I'll be in touch shortly in the meantime
+                    would you like to <a href="{{ url_for('index.homepage.home') }}">go back to the homepage?</a></p>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
