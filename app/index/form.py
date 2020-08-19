@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Email contact form."""
 from flask_wtf import FlaskForm
-from wtforms import StringField, TextAreaField, SubmitField
+from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, Email
 
 
@@ -16,4 +16,3 @@ class ContactMe(FlaskForm):
         """Create an instance."""
         super(ContactMe, self).__init__(*args, **kwargs)
         self.user = None
-

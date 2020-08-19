@@ -14,7 +14,7 @@ from app.extension import (
     csrf_protect,
     debug_toolbar,
     flask_static_digest,
-    mail
+    mail,
 )
 
 __all__ = ["create_app"]
@@ -30,7 +30,6 @@ def create_app(config_object="app.config"):
     register_extensions(app)
     register_blueprints(app)
     register_errorhandlers(app)
-    register_shellcontext(app)
     register_commands(app)
     configure_logger(app)
 
@@ -68,16 +67,6 @@ def register_errorhandlers(app):
     for errcode in [401, 404, 500]:
         app.errorhandler(errcode)(render_error)
     return None
-
-
-def register_shellcontext(app):
-    """Register shell context objects."""
-
-    def shell_context():
-        """Shell context objects."""
-        return {"db": db, "User": user.models.User}
-
-    app.shell_context_processor(shell_context)
 
 
 def register_commands(app):
