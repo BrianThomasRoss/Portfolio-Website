@@ -29,7 +29,7 @@ def create_app(config_object="app.config"):
     app.config.from_object(config_object)
     register_extensions(app)
     register_blueprints(app)
-    register_errorhandlers(app)
+    register_error_handlers(app)
     register_commands(app)
     configure_logger(app)
 
@@ -55,7 +55,7 @@ def register_blueprints(app):
     return None
 
 
-def register_errorhandlers(app):
+def register_error_handlers(app):
     """Register error handlers."""
 
     def render_error(error):
